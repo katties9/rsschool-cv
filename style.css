@@ -1,0 +1,241 @@
+@font-face {
+    font-family: Lora-Bold;
+    src: url("assets/fonts/Lora-BoldItalic.ttf");
+  }
+  
+  @font-face {
+    font-family: PlayfairDisplay;
+    src: url("assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+  }
+  
+  @font-face {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    src: url("assets/fonts/Lora-Regular.ttf");
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #fffefc;
+    font-family: "Lora-Bold";
+  }
+  
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  a:hover {
+    background: #c7ddef;
+    color: #004190;
+  }
+  
+  a {
+    color: #000000;
+    text-shadow: 1px 0 10px;
+  }
+  
+  /* header */
+  
+  header {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #9dcdf4;
+    border: 2px solid #9dcdf4;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .nav_menu {
+    background-color: #9dcdf4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+    padding: 0 px;
+    line-height: 40px;
+    font-family: "Lora-Regular";
+    color: #9dcdf4;
+    z-index: 1;
+  }
+  
+  .scroll_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* main */
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  
+  .info {
+    display: flex;
+    gap: 20px;
+  }
+  
+  @media (max-width: 744px) {
+    .info {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .info_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .content_wrapper {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .list_block {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #9dcdf4;
+    padding: 10px 30px;
+    max-width: 700px;
+  }
+  
+  .list_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Lora-Regular";
+  }
+  
+  .list_title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 2px #ffffff;
+    padding-bottom: 5px;
+    text-shadow: #9dcdf4 1px 0 10px;
+    font-family: "Lora-Bold";
+    font-size: 20px;
+  }
+  
+  .list_item {
+    font-size: 18px;
+    line-height: 18px;
+    position: relative;
+  }
+  
+  .list_item::before {
+    color: #9dcdf4;
+    content: "\2022";
+    font-weight: 700;
+    left: -15px;
+    line-height: 18px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .list_img_link {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .name {
+    display: flex;
+    font-family: "Lora-Bold";
+    font-size: 40px;
+  }
+  
+  .h {
+    font-family: "Lora-Regular";
+    font-size: 30px;
+    text-shadow: #9dcdf4 1px 0 10px;
+  }
+  
+  .location {
+    font-family: "Lora-Bold";
+    font-size: 20px;
+  }
+  
+  .about {
+    background-color: #ffffff;
+    border: 1px solid #9dcdf4;
+    padding: 10px 30px;
+  }
+  
+  .about_title {
+    font-family: "Lora-Bold";
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 1px #9dcdf4;
+    padding-bottom: 10px;
+    text-shadow: #9dcdf4 1px 0 10px;
+  }
+  
+  .about_description {
+    font-family: "PlayfairDisplay";
+    font-size: 18px;
+    padding-left: 10px;
+    border-left: 1px #9dcdf4;
+  }
+  
+  .image_preview img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px 5px #9dcdf4;
+  }
+  
+  .list_block_educ {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #9dcdf4;
+    padding: 10px 30px;
+    border-bottom: 1px #9dcdf4 solid;
+  }
+  .list_eng {
+    font-family: "Lora-Bold";
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .pre {
+    display: block;
+    white-space: pre-wrap;
+  }
+  
+  .code_example {
+    font-size: 14px;
+  }
+
+  /* footer */
+  
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-family: Lora-Bold;
+    font-size: 20px;
+    text-shadow: #9dcdf4 1px 0 10px;
+    background-color: #9dcdf4;
